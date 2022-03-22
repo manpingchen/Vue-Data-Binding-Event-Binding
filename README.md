@@ -37,3 +37,13 @@ fullname() will only be re-render when its reactive dependencies have changed.
 ```html
 <p class="background">{{ fullname }}</p>
 ```
+
+### Form submit prevent default refreshing
+with ```v-on:submit.prevent="submit"``` the submit event default will be prevented
+```html
+<form v-on:submit.prevent="submit">
+ <label htmlFor="name">Name</label>
+ <input type="text" v-model="name" id="name" />
+ <button class="w-100">Sign Up</button>
+</form>
+```
