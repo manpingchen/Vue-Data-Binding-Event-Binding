@@ -1,5 +1,8 @@
 # Vue Data Binding and Event Binding
  
+![vue2883](https://user-images.githubusercontent.com/10693128/159541759-59467dc6-e720-4bff-85cb-bf0f85aa75c2.jpeg)
+
+
 <img width="1800" alt="Screen Shot 2022-03-22 at 5 24 34 PM" src="https://user-images.githubusercontent.com/10693128/159540032-1c15e85a-991c-442f-bed1-69c5c39b28bf.png">
 
 ### Click event: v-on:click
