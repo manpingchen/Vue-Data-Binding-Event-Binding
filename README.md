@@ -1,11 +1,11 @@
 # Vue Data Binding and Event Binding
  
-### click event: v-on:click
+### Click event: v-on:click
 ```html
 <button v-on:click="add(10)" class="mr-1">Add 10</button>
 ```
 
-### two way binding: v-model
+### Two way binding: v-model
 1. Set the data needed in the data function
 ```js
 data() {
