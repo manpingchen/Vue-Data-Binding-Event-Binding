@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue Basics</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Vue Event and Data Binding</h1>
+    </header>
+    <section id="events">
+      <div class="card">
+        <h2>Buttons v-on:click</h2>
+        <button v-on:click="add(10)" class="mr-1">Add 10</button>
+        <button v-on:click="reduce(5)">Subtract 5</button>
+        <p v-once>Start from: {{counter}}</p>
+        <p>Result</p>
+        <p class="background">{{ counter }}</p>
+      </div>
+      <!-- <input type="text" v-bind:value="name" v-on:input="setName($event, 'chen')" /> -->
+      <!-- v-model: two way binding -->
+      <div class="card">
+        <h2>Input v-model</h2>
+        <input type="text" v-model="name" />
+        <p>Input value</p>
+        <p class="background">{{ name }}</p>
+        <button v-on:click="resetInput">Reset Input</button>
+      </div>
+      <div class="card">
+        <h2>Input v-model with fixed string</h2>
+        <input type="text" v-model="name" />
+        <p>Full Name</p>
+        <p class="background">{{ fullname }}</p>
+        <button v-on:click="resetInput">Reset first name</button>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(0deg, #ffeed2, #ffeae1);
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+}
+
+.mr-1 {
+  margin-right: 10px;
+}
+
+header {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  width: 500px;
+}
+
+#events {
+  display: grid;
+  width: 80%;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+}
+
+#events h2 {
+  font-size: 1.5rem;
+  margin: 0 0 1rem 0;
+}
+
+#events h3 {
+  font-size: 1.5rem;
+  margin: 0 0 1rem 0;
+}
+
+#events p {
+  font-size: 1.25rem;
+  border-radius: 25px;
+}
+
+#events input {
+  font: inherit;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#events input:focus {
+  outline: none;
+  border-color: #ffebc8;
+  background-color: #ffebc8;
+}
+
+#events button {
+  font: inherit;
+  cursor: pointer;
+  border: 1px solid cornflowerblue;
+  background-color: cornflowerblue;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  width: 48%;
+}
+
+#events button:hover,
+#events button:active {
+  background-color: cornflowerblue;
+  border-color: cornflowerblue;
+}
+
+div.card {
+  padding: 3rem 5rem;
+  border-radius: 50px;
+  margin-bottom: 30px;
+  background: #fff;
+}
+
+#events p.background {
+  padding: 1rem 2rem;
+  min-height: 45px;
+  background-color: #ffe5b8;
+}
