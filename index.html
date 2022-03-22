@@ -23,6 +23,7 @@
         <button v-on:click="reduce(5)">Subtract 5</button>
         <p v-once>Start from: {{counter}}</p>
         <p>Result</p>
+        <p class="caption">Counter is watched not greater than 50</p>
         <p class="background">{{ counter }}</p>
       </div>
       <!-- <input type="text" v-bind:value="name" v-on:input="setName($event, 'chen')" /> -->
@@ -35,8 +36,11 @@
         <button v-on:click="resetInput" class="w-100">Reset Input</button>
       </div>
       <div class="card">
-        <h2>Input v-model with fixed string</h2>
+        <h2>Computed Caching</h2>
+        <label>First Name</label>
         <input type="text" v-model="name" />
+        <label>Last Name</label>
+        <input type="text" v-model="lastName" />
         <p>Full Name</p>
         <p class="background">{{ fullname }}</p>
         <button v-on:click="resetInput" class="w-100">Reset first name</button>
@@ -44,8 +48,8 @@
       <div class="card">
         <h2>Submit prevent default</h2>
         <form v-on:submit.prevent="submit">
-          <label htmlFor="name">Name</label>
-          <input type="text" v-model="name" id="name" />
+          <label>Name</label>
+          <input type="text" v-model="name" />
           <p class="caption">Open the console window, to see the console.log after submitted.</p>
           <button class="w-100">Sign Up</button>
         </form>
