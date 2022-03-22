@@ -28,6 +28,9 @@ const app = Vue.createApp({
     resetInput() {
       this.name = "";
     },
+    submit() {
+      console.log("submitted");
+    },
   },
 });
 

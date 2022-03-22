@@ -48,7 +48,7 @@ header {
 
 #events input {
   font: inherit;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1.5rem;
   border: 1px solid #ccc;
   border-radius: 30px;
   width: 100%;
@@ -67,7 +67,7 @@ header {
   border: 1px solid cornflowerblue;
   background-color: cornflowerblue;
   color: white;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1.5rem;
   border-radius: 20px;
   width: 48%;
 }
@@ -89,4 +89,23 @@ div.card {
   padding: 1rem 2rem;
   min-height: 45px;
   background-color: #ffe5b8;
+}
+
+#events label {
+  text-transform: uppercase;
+  color: #aaa;
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.w-100{
+  width: 100% !important;
+}
+
+p.caption{
+  font-size: 0.7rem !important;
+  color: #aaa;
+  margin: 1rem 0;
+  display: block;
 }
